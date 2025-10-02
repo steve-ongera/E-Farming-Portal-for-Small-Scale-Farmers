@@ -106,10 +106,14 @@ USE_I18N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.2/howto/static-files/
+# Static files (CSS, JS, Images)
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [BASE_DIR / "static"]   # for project-level static
+STATIC_ROOT = BASE_DIR / "staticfiles"     # for collectstatic in production
 
-STATIC_URL = 'static/'
+# Media files (user uploads)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / "media"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
