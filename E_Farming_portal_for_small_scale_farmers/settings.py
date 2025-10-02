@@ -49,7 +49,7 @@ ROOT_URLCONF = 'E_Farming_portal_for_small_scale_farmers.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
